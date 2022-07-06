@@ -1,0 +1,208 @@
+.training-center{
+   margin-top: 37px;
+    .training-wrap{
+        display: flex;
+        justify-content: space-between;
+        gap: 49px;
+        .training-title{
+            width: 560px;
+            font-weight: 600;
+            font-size: 39px;
+            line-height: 57px;
+            text-transform: uppercase;
+            color: #55A630;
+            align-self: center;
+        }
+        .training-img{
+            width: 589px;
+            height: 452px;
+        }
+    }
+    .training-text{
+        margin-top: 75px;
+        background: #FFFFFF;
+        box-shadow: 10px 10px 10px rgba(207, 207, 207, 0.25);
+        padding: 59px 14px 40px 25px;
+        width: 997px;
+        p{
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 34px;
+            color: #424242;
+            opacity: 0.8;
+            padding-bottom: 20px;
+
+        }
+    }
+}
+.study{
+    margin-top: 175px;
+    h2{
+        font-weight: 600;
+        font-size: 35px;
+        align-items: center;
+        color: #55A630;
+        margin-bottom: 75px;
+    }
+    .study-line{
+        display: flex;
+        flex-direction: column;
+       gap: 177px;
+        
+        .study-block{
+            display: flex;
+            justify-content: space-between;
+            height: 396px;
+            
+        }
+        .study-img{
+            width: 488px;
+            img{
+                width: 488px;
+                height: 396px;
+            }
+        }
+        .study-content{
+            width: 472px;
+            align-self: center;
+            // padding-right: 118px;
+            h3{
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 26px;
+                color: #424242;
+                opacity: 0.8; 
+            }
+            hr{
+                border: 2px solid #55A630;
+                width: 133px
+            }
+            .study-txt{
+                padding-top: 45px;
+                p{
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 33px;
+                    color: #424242;
+                    opacity: 0.8;
+                    padding-bottom: 25px;  
+                }
+            }
+          
+        }
+    }
+}
+
+.achieve{
+    margin-top: 175px ;
+    background: #ECF9EB;
+    box-shadow: 0px 10px 10px rgba(240, 240, 240, 0.25);
+    padding: 70px 0 76px 0;
+    h2{
+        margin-bottom: 70px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        color: #55A630;
+    }
+}
+
+.trainer{
+    margin-top: 166px;
+   h2{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 28px;
+    text-align: center;
+    color: #424242;
+    margin-bottom: 75px;
+   }
+   .trainer-line{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .trainer-block{
+        max-width: 380px;
+        h3{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: #424242;
+            padding-top: 20px;
+            padding-bottom: 2px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 23px;
+            color: #1C1E23;
+            opacity: 0.8;
+        }
+    }
+   }
+}
+
+.about-review{
+    margin-top: 175px;
+    margin-bottom: 175px;
+    h2{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 28px;
+        text-align: center;
+        color: #424242;
+    }
+    .block-review{
+        margin-top: 75px;
+        background: #ECF9EB;
+        height: 1048px;
+        overflow-y: scroll;
+        padding: 70px 25px 70px 104px;
+        .item{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            .txt{
+                flex-grow: 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #1C1E23;
+                opacity: 0.8;
+                width: 746px;
+            }
+          .name{
+            flex-grow: 0;
+            .t1{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: #424242;
+            }
+            .t2{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                color: #424242;
+                opacity: 0.8;
+            }
+          }     
+       } 
+       .leave-review{
+        display: flex;
+        justify-content: center;
+        .review-btn{
+            padding: 21px 65px;
+            width: 285px;
+            background: #55A630;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF;
+          }
+      } 
+  }
+}

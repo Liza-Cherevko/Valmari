@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&family=Raleway:wght@400;500;600&display=swap');
+@import './mixin.scss';
+@import './screen-1.scss';
+@import './courses.scss';
+@import './courses-page.scss';
+@import './video-page.scss';
+@import './purpose.scss';
+@import './about-us.scss';
+@import './timetable.scss';
+@import './price.scss';
+@import './sale.scss';
+@import './about-us.2.scss';
+@import './adaptive.scss';
+
+*, html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.container {
+	max-width: 1200px;
+    margin: 0 auto;
+}
+.title{      
+  @include fonts(35px,#424242,28px);
+  text-align: center;
+  padding-top: 175px;
+  padding-bottom: 77px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+button{
+    border: none;
+}
+
+// swiper-styles
+
+
+  .swiper-pagination-bullet-active {
+    background-color: #000;
+  }
+  .sl-pg{
+    margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #82a37e;
+    &.swiper-pagination-bullet-active{
+  background: #55A630;
+    }
+  }
+  }
+  
+
+    .swiper-prev{
+      position: absolute;
+      top: 255px;
+      left: -27px;
+      z-index: 9;
+    }
+    .swiper-next{
+      position: absolute;
+      top: 255px;
+      right: -27px;
+      z-index: 9;;
+    }
+  
+  
+  // cards-styles
+  .violet{
+    color: #4340B4;
+    width: 150px;
+  }
+  .violet-bg{
+    background: #4340B4;
+  }
+
+  .violet-bg-1{
+    background: rgba(83, 81, 196, 0.1);
+    color: #4340B4;
+
+  }
+  .green{
+    color: #55A630;
+  }
+
+  .green-bg{
+    background: #55A630;
+  }
+
+  .green-bg-1{
+    color: #55A630;
+    background: #ECF9EB;
+
+  }
+
+  .mint{
+    color: #1D8195;
+  }
+
+  .mint-bg{
+    background: #00A896;
+  }
+
+  .mint-bg-1{
+    color: #00A896;
+    background: rgba(0, 168, 150, 0.1);
+
+  }
+ 
+
+.ibg{
+  position: relative;
+  img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+}
+
+
+
+
+
+.vbg{
+  position: relative;
+  iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+}
+h2{
+  font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #424242;
+}
+
+.about-review{
+  ::-webkit-scrollbar{
+    width: 22px;
+  }
+  ::-webkit-scrollbar-track{
+    background: #F0F0F0;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #55A630;
+   border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: #555;
+  }
+}
+
+
+
+#burger-menu {
+  display: none;
+  flex-direction: column;
+justify-content: center;
+  position: absolute;
+  right: 7px;
+  top: 11px;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 44px;
+  height: 23px;
+  z-index: 1;
+
+
+  &.active {
+    .box_item1 {
+      -webkit-transform: translateX(0) translateY(10px) rotate(45deg);
+      transform: translateX(0) translateY(10px) rotate(45deg);
+    }
+
+    .box_item2 {
+      opacity: 0;
+    }
+
+    .box_item3 {
+      -webkit-transform: translateX(0) translateY(-10px) rotate(-45deg);
+      transform: translateX(0) translateY(-10px) rotate(-45deg);
+    }
+  }
+
+  .box {
+    width: 44px;
+    height: 2px;
+    background: #4af507;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .box_item1 .box {
+      width: 44px;
+      
+    }
+    .box_item2 .box {
+      width: 37px;
+      
+    }
+    .box_item3 .box {
+      width: 44px;
+      
+    }
+   
+  }
+}

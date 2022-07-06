@@ -1,0 +1,70 @@
+.time-table{
+    margin-top: 75px;
+    margin-bottom: 78px;
+    h2{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 43px;
+        text-align: center;
+        color: #424242;
+        margin-bottom: 75px;
+    }
+    .block{
+       
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #D4D8DB;
+            height: 53px;
+
+            .parent-item{
+                text-align: center;
+                position: relative;
+                padding: 17px 0;
+                flex-grow: 1;
+                border:  1px solid #D4D8DB;;
+                &:first-child{
+                    flex-grow: 0;
+                    width: 202px;
+                   
+                }
+                &.active{
+                    background: #C7F8C2;
+                    a{
+                        color: #424242;  
+                    }
+                }
+                &:hover{
+                    .child{
+                        display: block;
+                    }
+                }
+        }
+       } 
+    }
+    .parent-stile{
+        width: 570px;
+           .item-stile{
+                width: 285px;
+                text-align: center;
+                position: relative;
+                padding: 17px 0;
+                flex-grow: 1;
+                border:  1px solid #D4D8DB;
+                &.active{
+                    background: #C7F8C2;
+                    a{
+                        color: #424242;  
+                    }
+                }
+            }
+        }
+    .tab-content{
+        margin-top: 53px;
+        img{
+            margin-top: 75px;
+        }
+    }
+}
